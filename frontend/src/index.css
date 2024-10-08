@@ -1,39 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900 &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-    margin: 0;
+	margin: 0;
+	font-family: "REM", serif;
+	font-optical-sizing: auto;
+}
+h5,
+h3 {
+	margin: 0;
 }
 
-a  {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
 
 #navDiv {
-    background-color: #9F3434;
-    display:flex;
-    justify-content: space-between;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
+	background-color: #9F3434;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
 }
 
 
 #mainTitle {
-    color: #FFFFFF;
-    margin-left: 25px;
-    font-weight: 600;
-    font-size: larger;
+	color: #FFFFFF;
+	margin-left: 25px;
+	font-weight: 600;
+	font-size: larger;
 }
 
 #mainButtons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-#mainButtons a{
-    margin-right: 25px;
-    text-align: center;
-    color:#FFFFFF
+#mainButtons a {
+	margin-right: 25px;
+	text-align: center;
+	color: #FFFFFF
+}
+
+#pageLand {
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.smallTitle {
+	color: #767676;
+	font-size: 20px;
+	font-weight: 400;
+
+	font-family: "REM", serif;
+
+	font-optical-sizing: auto;
+}
+
+.bigTitle {
+	color: #424242;
+	font-weight: 500;
+
+	font-size: 30px;
+}
+
+#newTitle {
+	margin-top: 30px;
+	font-weight: 400;
+}
+
+#cWindow {
+	display: flex;
+    flex-direction: column;
+	margin-top: 20px;
+
+}
+.panelDiv {
+	border-radius: 16px;
+	background: #FDFDFD;
+
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), -2px 4px 4px -5px rgba(0, 0, 0, 0.25) inset;
+	width: 286px;
+	height: 241px;
+}
+#row1C {
+	display: flex;
+
+}
+#row2C {
+    margin-top: 30px;
+    display: flex;
+}
+
+.panelDiv {
+	display: flex;
+	flex-direction: column;
+    margin-right: 30px;
+
+}
+.row1D {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+
+
+}
+
+.titlePanel {
+	color: #424242;
+	font-weight: 500;
+
+	font-size: 20px;
+	margin: 0 0 0 15px;
+}
+
+.difPanel {
+	color: #a00000;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0 15px 0 0;
+}
+
+.row2D {
+	margin: 0;
+	padding: 5px 15px 10px;
+	font-size: 19px;
 }
