@@ -1,5 +1,7 @@
+import Nav from "./Nav";
+
 export default function App() {
   return (
-    1
+    <Nav />
   )
 }
