@@ -7,7 +7,7 @@ export default function Nav() {
                 <div id="mainButtons">
                     <a href="#">Home</a>
                     <a href="#">Challanges</a>
-                    <a href="#">Account</a>
+                    <a href="/account">Account</a>
                 </div>
             </div>
         </nav>
