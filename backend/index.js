@@ -1,13 +1,20 @@
 import express from "express";
 import {PORT, mongoDBURL} from "./config.js";
 import mongoose from 'mongoose'
-
+import cors from 'cors';
+import AccountModel from './models/accountModel.js';
 const app = express();
+app.use(express.json())
+app.use(cors())
 
 app.get('/', (req,res) => {
     console.log(req);
     return res.status(234).send("Welcome to ManabuCode!")
     
+})
+
+app.post('/account/sign', (req,res) => {
+    AccountModel.create(req.body).then(Account => res.json(Account)).catch(err => res.json(err))
 })
 
 app.listen(PORT, ()=>{

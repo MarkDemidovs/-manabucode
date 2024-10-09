@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Account from './Account.jsx';
+import Sign from './Sign.jsx';
 import App from './App.jsx'
 import './index.css'
 
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
   {
     path: "account",
     element: <Account />
+  },{
+    path: "account/sign",
+    element: <Sign />
   }
+
 ]);
 
 createRoot(document.getElementById('root')).render(
