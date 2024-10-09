@@ -3,6 +3,8 @@ import {PORT, mongoDBURL} from "./config.js";
 import mongoose from 'mongoose'
 import cors from 'cors';
 import AccountModel from './models/accountModel.js';
+import Cookies from 'js-cookie'
+
 const app = express();
 app.use(express.json())
 app.use(cors())
@@ -24,6 +26,7 @@ app.post('/account/login', (req,res) => {
             if(username){
                 if(username.password === password) {
                     res.json("Success")
+                    Cookies.set("auth", `${username}${password}`, {expires: 1})
                 } else {
                     res.json("Incorrect Password")
                 }
