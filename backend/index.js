@@ -17,6 +17,22 @@ app.post('/account/sign', (req,res) => {
     AccountModel.create(req.body).then(Account => res.json(Account)).catch(err => res.json(err))
 })
 
+app.post('/account/login', (req,res) => {
+    const {username, password} = req.body;
+    AccountModel.findOne({username: username}).then(
+        username=>{
+            if(username){
+                if(username.password === password) {
+                    res.json("Success")
+                } else {
+                    res.json("Incorrect Password")
+                }
+            } else {
+                res.json("No username found")
+            }
+        }
+    )
+})
 app.listen(PORT, ()=>{
     console.log(`listening on port ${PORT}`);
 })
