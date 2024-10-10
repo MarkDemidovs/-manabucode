@@ -127,3 +127,28 @@ a {
 	padding: 5px 15px 10px;
 	font-size: 19px;
 }
+
+.testPanels {
+	display: flex;
+	flex-direction: row;
+}
+
+.infoPanel, .codePanel, .resultPanel{
+	border: dotted;
+	min-height: 98dvh;
+}
+.codePanel, .resultPanel {
+	width: 33%;
+}
+
+.infoPanel{
+	width: 34%;
+}
+
+.codePanel textarea{ 
+	min-height: 98dvh;
+	max-width: 100%;
+	width: 100%;
+	font-family: "REM", serif;
+	font-size: large;
+}

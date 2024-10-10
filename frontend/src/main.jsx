@@ -9,6 +9,7 @@ import Sign from './Sign.jsx';
 import Log from './Log.jsx';
 import App from './App.jsx'
 import './index.css'
+import C1 from './challanges/C1.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
   },{
     path: "account/log",
     element: <Log />
+  }, {
+    path: "C1", 
+    element: <C1/>
   }
 
 ]);

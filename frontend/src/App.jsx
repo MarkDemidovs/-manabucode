@@ -13,15 +13,15 @@ export default function App() {
     
       <div id="cWindow">
         <div id="row1C">
-			<Panel title={'Challenge 1'} difficulty={"1/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
-			<Panel title={'Challenge 2'} difficulty={"2/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
-			<Panel title={'Challenge 3'} difficulty={"3/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
+			<Panel title={'Challenge 1'} link={"C1"} difficulty={"1/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
+			<Panel title={'Challenge 2'}  link={"C2"} difficulty={"2/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
+			<Panel title={'Challenge 3'} link={"C3"} difficulty={"3/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
 
 		</div>
 
         <div id="row2C">
-			<Panel title={'Challenge 4'} difficulty={"4/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
-			<Panel title={'Challenge 5'} difficulty={"5/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
+			<Panel title={'Challenge 4'} link={"C4"} difficulty={"4/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
+			<Panel title={'Challenge 5'} link={"C5"} difficulty={"5/5"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus tellus vitae ipsum ultrices, id facilisis urna ultrices. Pellentesque vehicula dignissim magna vitae rutrum. "}/>
 			<Panel title={'Submit Challange'} difficulty={""} description={"Click here to submit a custom challange."}/>
 
 		</div>
