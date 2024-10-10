@@ -6,8 +6,10 @@ export default function C1() {
 	return (
 		<>
 			<div className="testPanels">
-				<InfoPanel title={"idk"}/>
-				<CodePanel/>
+				<InfoPanel title={"idk"} description={
+                    "hi helko what /n geo"
+                    }/>
+				<CodePanel />
 				<ResultPanel/>
 			</div>
 		</>
