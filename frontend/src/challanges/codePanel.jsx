@@ -14,9 +14,22 @@ export default function CodePanel({ defaultExecutionCode, shouldBe }) {
             
             const result = new Function(wrappedCode)();
             console.log("Result:", result);
-            console.log("Should be:", "Stop trying to cheat!"); //shouldBe
+            console.log("Should be:", shouldBe); 
 
-            if (result === shouldBe.trim()) {
+            // Normalize values for comparison
+            const normalizeValue = (value) => {
+                if (typeof value === 'string') {
+                    return value.trim(); // Trim strings
+                } else if (value instanceof Object) {
+                    return JSON.stringify(value); // Convert objects to strings
+                }
+                return value; // Return numbers and booleans as is
+            };
+
+            const normalizedResult = normalizeValue(result);
+            const normalizedShouldBe = normalizeValue(shouldBe);
+
+            if (normalizedResult === normalizedShouldBe) {
                 console.log("Solved!");
             } else {
                 console.log("Not Solved!");

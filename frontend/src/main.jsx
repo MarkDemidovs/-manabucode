@@ -10,6 +10,7 @@ import Log from './Log.jsx';
 import App from './App.jsx'
 import './index.css'
 import C1 from './challanges/C1.jsx';
+import C2 from './challanges/C2.JSX';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,9 @@ const router = createBrowserRouter([
   }, {
     path: "C1", 
     element: <C1/>
+  }, {
+    path: "C2",
+    element: <C2 />
   }
 
 ]);
