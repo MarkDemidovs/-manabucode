@@ -147,8 +147,13 @@ a {
 
 .codePanel textarea{ 
 	min-height: 98dvh;
-	max-width: 100%;
+	max-width: 85%;
 	width: 100%;
 	font-family: "REM", serif;
 	font-size: large;
+	resize: none;
+}
+
+.descArea {
+	white-space: pre-wrap;
 }
