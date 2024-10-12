@@ -133,16 +133,16 @@ a {
 	flex-direction: row;
 }
 
-.infoPanel, .codePanel, .resultPanel{
+.infoPanel, .codePanel{
 	border: dotted;
 	min-height: 98dvh;
 }
-.codePanel, .resultPanel {
-	width: 33%;
+.codePanel {
+	width: 55%;
 }
 
 .infoPanel{
-	width: 34%;
+	width: 45%;
 }
 
 .codePanel textarea{ 

@@ -5,7 +5,6 @@ export default function CodePanel({ defaultExecutionCode, shouldBe }) {
 
     const runCode = () => {
         try {
-            // Define code with an explicit return for the result of defaultExecutionCode
             const wrappedCode = `
                 ${code}
                 return (function() {
@@ -13,10 +12,9 @@ export default function CodePanel({ defaultExecutionCode, shouldBe }) {
                 })();
             `;
             
-            // Execute the code
             const result = new Function(wrappedCode)();
             console.log("Result:", result);
-            console.log("Should be:", shouldBe);
+            console.log("Should be:", "Stop trying to cheat!"); //shouldBe
 
             if (result === shouldBe.trim()) {
                 console.log("Solved!");
