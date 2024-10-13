@@ -22,13 +22,13 @@ export default function Account() {
         <>
  {!isAuthenticated() && (
                 <>
-                    <p>Account not found!</p>
+                    <p>Account not found! Please note that the accounts feature is not yet complete.</p>
                     <button><a href="/account/log">Log In</a></button>
                     <button><a href="/account/sign">Sign Up</a></button>
                 </>
             )}
             {isAuthenticated() && <>
-            <p>Welcome back!</p>
+            <p>Welcome back! Please note that the accounts feature is not yet complete.</p>
             <button onClick={logout}>Log Out</button>
             <p>Refresh the page after logging out.</p>
             </>}
