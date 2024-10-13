@@ -1,9 +1,11 @@
 import CodePanel from "./codePanel";
 import InfoPanel from "./infoPanel";
+import Nav from "../Nav";
 
 export default function C2() {
 	return (
 		<>
+		<Nav/>
 			<div className="testPanels">
 				<InfoPanel title={"Challenge 2: Sum of All Numbers in an Array"} description={
                     "Create a function that takes an array of numbers and returns the sum of all the numbers in the array. Start with this function: function sumArray(arr) {}  Check the Developer Console to see if you solved it!" 

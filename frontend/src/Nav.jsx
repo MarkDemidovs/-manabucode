@@ -5,8 +5,7 @@ export default function Nav() {
                 <p id="mainTitle">ManabuCode</p>
 
                 <div id="mainButtons">
-                    <a href="#">Home</a>
-                    <a href="#">Challanges</a>
+                    <a href=".">Home</a>
                     <a href="/account">Account</a>
                 </div>
             </div>

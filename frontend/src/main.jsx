@@ -14,6 +14,7 @@ import C2 from './challanges/C2.JSX';
 import C3 from './challanges/C3.jsx';
 import C4 from './challanges/C4.jsx';
 import C5 from './challanges/C5.jsx';
+import Submit from './submit.jsx';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,8 @@ const router = createBrowserRouter([
     element: <C4 />
   }, {
     path: "C5", element: <C5 />
+  }, {
+    path: "submit", element: <Submit/>
   }
 
 ]);

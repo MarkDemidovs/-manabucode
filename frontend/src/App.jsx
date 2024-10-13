@@ -22,7 +22,6 @@ export default function App() {
         <div id="row2C">
 			<Panel title={'Challenge 4'} link={"C4"} difficulty={"4/5"} description={"Create a function that takes an array of numbers as an argument and returns the largest number in the array."}/>
 			<Panel title={'Challenge 5'} link={"C5"} difficulty={"5/5"} description={'Write a function that takes a number as an argument and returns a single string. The string should contain numbers from 1 to the given number. For multiples of 3, include "Fizz" instead of the num...'}/>
-			<Panel title={'Submit Challange'} difficulty={""} description={"Click here to submit a custom challange."}/>
 
 		</div>
 
